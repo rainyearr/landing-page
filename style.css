@@ -1,13 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 body {
   display: flex;
   flex-direction: column;
   font-family: Roboto, sans-serif;
-  margin: 0 auto;
   min-height: 100vh;
-  max-width: 900px;
   background-color: #1f2937;
 }
 
+.container {
+  width: 1200px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 /* Styling for Header Section */
 .header-section {
   display: flex;
@@ -64,3 +70,34 @@ a {
   border-style: none;
   color: white;
 }
+
+/* Card Component Styling */
+
+.random-info-section {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+}
+
+.random-info-section > h1 {
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 900;
+}
+.card {
+  width: 200px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.card-container > .card > .image {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #3882f6;
+  border-radius: 10px;
+}
+
+/* Quotation Section Styling */
